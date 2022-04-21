@@ -2,6 +2,7 @@ fetch("http://makeup-api.herokuapp.com/api/v1/products.json?brand=revlon")
   .then((resp) => resp.json())
   .then((json) => {
     console.log(json)
+    json.pop()
     
     json.forEach((product)=>{
     const parentDiv=document.getElementById('item')
@@ -20,27 +21,24 @@ fetch("http://makeup-api.herokuapp.com/api/v1/products.json?brand=revlon")
     productDiv.appendChild(imageElement)
     productDiv.appendChild(descriptionElement)
     productDiv.appendChild(priceElement)
+    
 
 
     imageElement.setAttribute('src',product.image_link)
-    priceElement.innerText=product.price
+    const price=Math.round((product.price)*100)
+    priceElement.innerText=`Ksh. ${price}`
     imageElement.className='productImage'
     priceElement.className='price'
     productDiv.className='productDiv'
 
     descriptionElement.innerText=product.category;
     
-    const price=product.price
-    console.log(price)
-    for(let i=0; i<price.length; i++){
-        return `'$'+${i}`
-    }
-    console.log(i)
+    
     
 
-
+    
     
         
-    })
+  })
 
 });

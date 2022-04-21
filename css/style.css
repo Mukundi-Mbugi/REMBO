@@ -7,6 +7,7 @@
 .body {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
+  padding: 10px;
 }
 #logo{
     height: 50vh;
@@ -37,11 +38,12 @@
 .hero h1 {
   font-size: 100px;
   letter-spacing: 1px;
-  font-weight: 100;
+  font-weight: 500;
   padding: 10px;
   margin: auto;
-  color: rgb(255, 6, 122);
+  color: rgb(0, 0, 0);
   text-shadow: 1cm;
+  box-shadow: 2px 4px 5px rgba(0,0,0,0.3);
   
 }
 #imgskin{
@@ -54,11 +56,10 @@
     align-items: center;
     justify-content: center;
 }
-/* h3{
-    font-weight: 100;
+#skin{
+    font-weight: 300;
     color: rgb(255, 6, 122);
-    font-family: "Roboto";
-} */
+}
 
 .hero p {
   font-size: 30px;
@@ -68,9 +69,10 @@
   padding: 20px;
 }
 #accordion{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: 300;
     border: solid 1px rgb(255, 0, 111);
+    background-color: black;
 }
 #accordion p{
     font-size: 22px;
@@ -97,6 +99,7 @@
     justify-content: flex-end;
     align-items: flex-end;
     padding: 20px;
+    
 }
 #searchbox input{
     background-color: transparent;
@@ -111,6 +114,7 @@
     border: rgb(249, 0, 95) solid 1px;
     padding: 5px;
     font-size: 13px;
+    height: 30px;
 }
 #itemscontainer{
     background-color: rgb(251, 250, 250);
@@ -135,7 +139,7 @@
 }
 
 .productDiv h6{
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     text-align: center;
     padding: 5px;
@@ -143,6 +147,9 @@
 }
 .productImage{
     height: 100px;
+}
+.productDiv p{
+    font-weight: 300;
 }
 .price{
     background-color: rgb(242, 41, 118);
