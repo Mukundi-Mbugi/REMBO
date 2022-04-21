@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap");
+
+*{
+  font-family: "Roboto", sans-serif;
+}
+
+.body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+#logo{
+    height: 50vh;
+    width: 50vh;
+}
+.hero {
+  background-image: url(../images/flawlessskin-1589384044.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+  position: relative;
+  margin-bottom: 20px;
+  z-index: -2;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+.hero h1 {
+  font-size: 100px;
+  letter-spacing: 1px;
+  font-weight: 100;
+  padding: 10px;
+  margin: auto;
+  color: rgb(255, 6, 122);
+  text-shadow: 1cm;
+  
+}
+#imgskin{
+    height: 10cm;
+    width: 15cm;
+}
+#blogcol1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* h3{
+    font-weight: 100;
+    color: rgb(255, 6, 122);
+    font-family: "Roboto";
+} */
+
+.hero p {
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: rgb(255, 0, 111);
+  padding: 20px;
+}
+#accordion{
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    border: solid 1px rgb(255, 0, 111);
+}
+#accordion p{
+    font-size: 22px;
+}
+
+#btn {
+  position: absolute;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  justify-content: last baseline;
+  margin-top: 10cm;
+  margin-left: 15.2cm;
+}
+#searchbox{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 20px;
+}
+#searchbox input{
+    background-color: transparent;
+    border: rgb(255, 2, 90) solid 1px;
+    height: 20px;
+    border-radius: 5px;
+    margin: 3px;
+}
+#searchbtn{
+    color: rgb(249, 0, 133);
+    background-color: transparent;
+    border: rgb(249, 0, 95) solid 1px;
+    padding: 5px;
+    font-size: 13px;
+}
+#itemscontainer{
+    background-color: rgb(251, 250, 250);
+}
+#item{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    margin-bottom: 10px;
+}
+
+.productDiv{
+    border: 1px solid rgb(255, 0, 111);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 4px 5px rgba(0,0,0,0.3);
+    transition: transform 0.4s ease;
+}
+
+.productDiv h6{
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    padding: 5px;
+    
+}
+.productImage{
+    height: 100px;
+}
+.price{
+    background-color: rgb(242, 41, 118);
+    padding: 3px;
+    border-radius: 2px;
+    width: 50%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+#footer-col-1 ul{
+    display: flex;
+    
+}
+#footer-col-1 ul li{
+    display: flex;
+    list-style: none;
+    height: 10vh;
+    padding: 10px;
+    background-color: white;
+}
+#footer{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+#footer-col-2{
+    align-items: flex-start;
+}
+#sendbtn{
+    background-color: red;
+    color: white;
+    border: red;
+}
+#checkbox,#policy{
+    color: red;
+}
