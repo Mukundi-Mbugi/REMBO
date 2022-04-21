@@ -4,7 +4,7 @@ const findButton=document.getElementById('findbtn')
       event.preventDefault();
       const brand=document.getElementById('brands').value
       console.log(brand)
-      fetch(`http://makeup-api.herokuapp.com/api/v1/products.json?brand=${brand}`)
+      fetch(`https://makeup-api.herokuapp.com/api/v1/products.json?brand=${brand}`)
   .then(response => response.json())
   .then(data => {
     console.log(data);
