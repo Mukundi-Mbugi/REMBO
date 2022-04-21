@@ -40,18 +40,28 @@ findButton.addEventListener("click", (event) => {
         });
 
         let form = document.getElementById("form");
-        if (form.style.display !== "none") {
-          form.style.display = "flex";
+        
+        if (form.style.display !== 'none') {
+          form.style.display = 'flex';
+          
         } else {
           form.style.display = "none";
         }
       });
     });
 });
+
+let popup = document.getElementById('popup')
+let popupButton = document.getElementById('popbtn')
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  alert(
-    "Thank you for your contribution. Our team will review the product for listing"
-  );
+  if(popup.style.display!=='none'){
+    popup.style.display = 'block';
+  }
   setTimeout(() => form.reset(), 3000);
 });
+
+popupButton.addEventListener('click',()=>{
+  popup.remove()
+})

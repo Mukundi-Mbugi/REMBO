@@ -191,7 +191,7 @@
 .form p {
   color: rgb(250, 250, 250);
   background-color: red;
-  padding: 3px;
+  padding: 10px;
   width: 100%;
   text-align: center;
 }
@@ -223,4 +223,26 @@
 #policy {
   color: red;
   cursor: pointer;
+}
+.popup{
+    width: 400px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    display: none;
+    text-align: center;
+    padding: 0 30px 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.popup img{
+    width: 100px;
+    height: 100px;
+}
+#popbtn{
+    border: none;
+    background-color: rgb(71, 198, 71);
+    color: white;
+    padding: 0 10px 0px;
+    border-radius: 5px;
+    
 }

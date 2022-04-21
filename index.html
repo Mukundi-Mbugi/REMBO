@@ -125,10 +125,10 @@
               <option value="covergirl">covergirl</option>
               <option value="dior">dior</option>
               <option value="suncoat">suncoat</option>
-              <option value="fenty">fenty</option>
+              <option value="colourpop">colourpop</option>
               <option value="wet n wild">wet n wild</option>
               <option value="sante">sante</option>
-              <option value="lotus cosmetics usa">lotus cosmetics usa</option>
+              <option value="physicians formula">physicians formula</option>
             </select>
             <button id="findbtn"><img src="./images/icons8-search-bar-50.png" alt=""></button>
           </div>
@@ -143,11 +143,17 @@
             
               <form id="form" class="form" action="">
                 <p>Suggest a product we should add</p>
-                <input type="text"placeholder="Product name">
-                <input type="text" placeholder="A short description">
-                <input type="text" placeholder="Paste image URL">
+                <input type="text"placeholder="Product name" required>
+                <input type="text" placeholder="A short description" required>
+                <input type="text" placeholder="Paste image URL" required>
                 <button>Submit</button>
               </form>
+              <div class="popup" id="popup">
+                <img src="./images/icons8-ok.gif" alt="">
+                <h4>Thank you!</h4>
+                <p>Your product was submitted successfully. <br>Our team will evaluate it for listing.</p>
+                <button id="popbtn">OK</button>
+              </div>
           </div>
         </div>
       </div>
