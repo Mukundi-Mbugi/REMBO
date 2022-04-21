@@ -19,13 +19,17 @@
     
     <div class="container2">
       <div class="row">
-        <div class="hero">
-          
+        <div class="col col1">
           <img id="logo" src="./images/logo.png" alt="logo">
-          <h1>Beauty <br> Redefined</h1>
-          <!-- <p>'beauty redefined!'</p> -->
-          
         </div>
+        <div class="col">
+          <div class="hero">
+            <h1>Beauty <br> Redefined</h1>
+            <!-- <p>'beauty redefined!'</p> -->
+            
+          </div>
+        </div>
+        
         
       </div>
     </div>
@@ -33,21 +37,21 @@
 
     <!-- blog starts -->
     <div class="container-fluid">
-      <div class="row mb-5">
-        <div id="blogcol1" class="col">
+      <div class="row">
+        <div id="blogcol1" class="col py-5">
           <h3 id="skin">Know your skin tone</h3>
-          <img id="imgskin" src="./images/skintype.jpg" alt="">
+          <img id="imgskin" src="./images/moisturizer.jpg" alt="">
         </div>
-        <div class="col p-2">
+        <div class="col py-5">
           <div class="accordion" id="accordionPanelsStayOpenExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                <button id="accordion" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                <button id="accordion" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="" aria-controls="panelsStayOpen-collapseOne">
                   <p>Step 1 – Clean/ Prepare your skin</p>
 
                 </button>
               </h2>
-              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
                 <div class="accordion-body">
                   First things first. Let’s get your skin back to its natural form. Without any makeup, chemicals, or dirt/dust. Remove any makeup and wash your face with a plain non-acidic facewash which doesn’t include any moisturisers. Make sure to use lukewarm water as hot water would dry your skin. Pat-dry your skin with a gentle towel rather than scrubbing it harshly. Do not apply any products and do not touch your face. Wait for 1-2 hours. This way you will allow your skin to get back to its natural form without any outside elements. You are now ready to examine your skin and find out your skin type.
                 </div>
@@ -117,9 +121,27 @@
     <!-- items section starts -->
     <div id="itemscontainer" class="container-fluid">
       <div class="row">
-        <div id="searchbox">
-          <input type="text"><button id="searchbtn">search item</button>
+        <div  id="searchcol1" class="col">
+          
+          <select  name="brands" id="brands">
+            <option value="">Choose Brand</option>
+            <option value="sinful colours">revlon</option>
+            <option value="salon perfect">salon perfect</option>
+            <option value="marienatie">marienatie</option>
+            <option value="essie">essie</option>
+            <option value="glossier">glossier</option>
+            <option value="covergirl">covergirl</option>
+            <option value="dior">dior</option>
+            <option value="dior">suncoat</option>
+            <option value="dior">fenty</option>
+            <option value="dior">wet n wild</option>
+            <option value="dior">sante</option>
+            <option value="dior">lotus cosmetics usa</option>
+            </select>
+            <button id="findbtn"><img src="./images/icons8-search-bar-50.png" alt=""></button>
         </div>
+      </div>
+      <div class="row itemsrow">
         <div id="item" class="col"></div>
         <form id="form" action="">
           <input type="text">
