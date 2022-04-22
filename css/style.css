@@ -12,7 +12,7 @@
 #logo {
   height: 50vh;
   width: 50vh;
-  box-shadow: 2px 4px 5px rgba(255, 0, 38, 0.3);
+  box-shadow: 2px 0px 5px rgba(255, 0, 38, 0.3);
 }
 .hero {
   background-image: url(../images/flawlessskin-1589384044.webp);
@@ -58,6 +58,8 @@
   font-weight: 300;
   border: solid 1px rgb(255, 0, 111);
   background-color: rgb(82, 68, 71);
+  transform: scale(1.1);
+  transition: 1s ease;
 }
 #accordion p {
   font-size: 22px;
@@ -101,17 +103,10 @@
 }
 #item {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(auto-fit, 1fr);
   row-gap: 2rem;
   column-gap: 2rem;
   margin-bottom: 10px;
-}
-#items {
-  background-image: url(../images/two-beautiful-girls-with-make-up-royalty-free-image.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  height: 10%;
-  width: 100%;
 }
 
 .productDiv {
@@ -224,25 +219,35 @@
   color: red;
   cursor: pointer;
 }
-.popup{
-    width: 400px;
-    background-color: #fff;
-    border-radius: 6px;
-    position: absolute;
-    display: none;
-    text-align: center;
-    padding: 0 30px 30px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+.popup {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 6px;
+  position: absolute;
+  display: none;
+  text-align: center;
+  padding: 0 30px 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-.popup img{
-    width: 100px;
-    height: 100px;
+.popup img {
+  width: 100px;
+  height: 100px;
 }
-#popbtn{
-    border: none;
-    background-color: rgb(71, 198, 71);
-    color: white;
-    padding: 0 10px 0px;
-    border-radius: 5px;
-    
+#popbtn {
+  border: none;
+  background-color: rgb(71, 198, 71);
+  color: white;
+  padding: 0 10px 0px;
+  border-radius: 5px;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: none;
+}
+.top p {
+  color: red;
 }

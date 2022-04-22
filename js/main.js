@@ -40,10 +40,11 @@ findButton.addEventListener("click", (event) => {
         });
 
         let form = document.getElementById("form");
-        
-        if (form.style.display !== 'none') {
-          form.style.display = 'flex';
-          
+        let top = document.getElementById("top");
+
+        if (form.style.display !== "none" && top.style.display !== "none") {
+          form.style.display = "flex";
+          top.style.display = "flex";
         } else {
           form.style.display = "none";
         }
@@ -51,17 +52,17 @@ findButton.addEventListener("click", (event) => {
     });
 });
 
-let popup = document.getElementById('popup')
-let popupButton = document.getElementById('popbtn')
+let popup = document.getElementById("popup");
+let popupButton = document.getElementById("popbtn");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  if(popup.style.display!=='none'){
-    popup.style.display = 'block';
+  if (popup.style.display !== "none") {
+    popup.style.display = "block";
   }
   setTimeout(() => form.reset(), 3000);
 });
 
-popupButton.addEventListener('click',()=>{
-  popup.remove()
-})
+popupButton.addEventListener("click", () => {
+  popup.remove();
+});
