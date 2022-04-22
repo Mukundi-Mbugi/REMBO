@@ -3,7 +3,7 @@
 #### By **Elijah Mbugi**
 Elijah Mbugi is a software development student at Moringa School.
 ## Description
-This is an online store that aims to bridge the information gap that exist when people want to shop for makeup products.
+This is an online makeup store that aims to bridge the information gap that exist when people want to shop for makeup products.
 ## Setup/Installation Requirements
 If you want to contribute to the development of this application, follow the following steps:
 1. Go to my Mukundi-Mbugi git account and fork the REMBO repository.
