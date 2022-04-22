@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap");
 
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;  
 }
 
 .body {
@@ -92,6 +92,7 @@
 #brand1 {
   color: red;
   font-size: 20px;
+  padding-top: 10px;
 }
 #findbtn {
   background-color: transparent;
@@ -99,11 +100,12 @@
   padding: 5px;
 }
 #itemscontainer {
-  background-color: rgb(251, 250, 250);
+  background-color: rgb(244, 207, 207);
 }
 #item {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 1fr);
+  grid-template-columns: repeat(auto-fit,20rem);
+  justify-content: center;
   row-gap: 2rem;
   column-gap: 2rem;
   margin-bottom: 10px;
@@ -114,9 +116,9 @@
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
+  background-color: white;
   align-items: center;
-  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
 }
 .productDiv:hover {
   transform: scale(1.1);
